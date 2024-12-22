@@ -1,0 +1,137 @@
+#main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.virtual-assistant-img{
+    /* height: 70%; */
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transform: scale(0.8) rotate(0deg); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+    animation: showImage 5s infinite; 
+}
+
+@keyframes showImage {
+    0%, 100% {
+      opacity: 0; 
+      transform: scale(0.8); 
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+span{
+     background: linear-gradient(to right, rgb(255, 0, 128), rgb(94, 0, 255));
+     font-size: 2vmax; 
+     background-clip: text; 
+     -webkit-background-clip: text; 
+     color: transparent;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(237, 4, 125, 0.8); 
+     letter-spacing: 1px; 
+     
+}
+
+
+button{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: linear-gradient(to right, rgb(0, 255, 204), rgb(0, 128, 255));
+    gap: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d; 
+    perspective: 500px; 
+}
+
+button:hover{
+    background: linear-gradient(to right, rgb(29, 161, 242), rgb(56, 183, 255));
+    transform: scale(1.1) rotateX(15deg) rotateY(15deg); 
+    box-shadow: 2px 2px 60px rgb(29, 161, 242);
+    color: white;
+}
+
+button:active{
+    transform: scale(0.95) rotateX(30deg) rotateY(30deg); 
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.response{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#speak-img{
+    width: 100px;
+}
+
+p{
+    font-size: 1.3vmax;
+    text-align: center;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0 40px;
+}
+
+
+#response-img{
+    width: 50vw;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.close-conversation-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-conversation-btn:hover {
+    background-color: #e60000;
+  }
+  
+
+
+  /* doc styling */
+  
+
+  @media screen and (max-width: 600px) {
+    .virtual-assistant-img {
+        opacity: 1;
+        animation: none; 
+    }
+}
