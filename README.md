@@ -1,6 +1,6 @@
 # AI ASSISTANT (Alphora)
 <h1 style="font-size:20px">Alphora AI Assistant</h1>
-<p><a href="https://gym-master-7.netlify.app/">View The Live Deployment </a></p>
+<p><a href="https://alphora.netlify.app/">View The Live Deployment </a></p>
 
 <h2 style="font-size:20px">Technology used to make Alphora</h2>
 
@@ -26,7 +26,11 @@ You can find their tutorial here: <a href="https://youtu.be/F77eDj-Yi1o?si=IOZJk
 <h2 style="margin-top:20px"> Demo Application</h2>
 
 
-https://github.com/user-attachments/assets/a75b562c-6fbd-41dc-ae74-ac51ee858002
+
+
+https://github.com/user-attachments/assets/6da4ad5b-aabd-46c8-9493-9cffc5340bb5
+
+
 
 
 
